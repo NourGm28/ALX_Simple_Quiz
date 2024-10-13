@@ -1,8 +1,7 @@
 let feedback = document.querySelector("#feedback");
+let submit = document.getElementById('submit-answer');
 const correctAnswer = "4";
 function checkAnswer(){
-    let feedback = document.querySelector("#feedback");
-    
     const correctAnswer = "4";
     const form = document.getElementById("quiz-container");
     let userAnswer =form.querySelector('input[name ="quiz"]:checked').value;
@@ -13,6 +12,6 @@ function checkAnswer(){
         
     }
 }
-let submit = document.getElementById('submit-answer');
+
 submit.addEventListener('click', checkAnswer);
 
